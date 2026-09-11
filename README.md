@@ -82,14 +82,16 @@ Many GitHub tutorials exist (e.g., seung-lab/FlyConnectome, sjcabs/fly_connectom
 ## Simulations & Embodied Models
 
 - **NeuroMechFly** - Data-driven neuromechanical model of adult *Drosophila* (v1 and v2) combining biomechanics, muscles, and neural controllers in a physics simulator; supports vision, olfaction, complex terrain, and connectome-constrained circuits. Papers in *Nature Methods* (2022 & 2024).
+- **[Whole-body physics simulation of fruit fly locomotion](https://www.nature.com/articles/s41586-025-09029-4)** - Eon Systems PBC drove NeuroMechFly v2 with a ~125,000-neuron, ~50-million-synapse FlyWire-derived connectome model in MuJoCo; walking, grooming, and feeding emerged with no training data or gradient descent, reported at ~95% behavioral accuracy against real fly kinematics. *Nature*, 2025-2026; see also the [bioRxiv walking central-pattern-generator preprint](https://www.biorxiv.org/content/10.1101/2025.09.12.675944.full.pdf).
 
 Community simulations using the open MaleCNS / FlyWire data (often with leaky-integrate-and-fire or RL fine-tuning) have exploded since the 2026 release.
 
 ## Viral & Community Experiments
 
-The MaleCNS release (especially Sept 2026) sparked a creative wave on X. Verified examples:
+The MaleCNS release (especially Sept 2026) sparked a creative wave on X, which [Google AI's own recap thread](https://x.com/GoogleAI/status/2098109357624095155) later pointed back to ("this is why we mapped out all 166,000 of the male fruit fly's neurons"). Verified examples:
 
-- Simulated MaleCNS controlling agents in **Minecraft**, **Beat Saber**, **Mario 64**, and **Doom** ("DOOMFLY") - widely reported across independent outlets. [ [PC Gamer](https://www.pcgamer.com/hardware/after-google-mapped-an-adult-male-fruit-flys-brain-software-engineers-made-it-play-doom-mario64-and-beat-saber/) | [Dexerto](https://www.dexerto.com/gaming/googles-digital-fly-brain-gets-its-own-heaven-after-going-through-beat-saber-hell-3407304/) ]
+- **[NeuroCraft Fly](https://github.com/evnsnclr/neurocraft-fly-public)** - Evan Sinclair Smith's Minecraft mod running the full retained MaleCNS v1.0 connectome (166,700 neurons, ~25.6M directed connections); in-game events (food, light, nearby creatures, attacks) drive the neural model, whose activity is read out into the fly's movement. Built two days after the MaleCNS paper, with GPT-6 Astra assistance. Code/mod release in progress as of this writing.
+- Simulated MaleCNS controlling agents in **Beat Saber**, **Mario 64**, and **Doom** ("DOOMFLY") - widely reported across independent outlets alongside the Minecraft demo above. [ [PC Gamer](https://www.pcgamer.com/hardware/after-google-mapped-an-adult-male-fruit-flys-brain-software-engineers-made-it-play-doom-mario64-and-beat-saber/) | [Dexerto](https://www.dexerto.com/gaming/googles-digital-fly-brain-gets-its-own-heaven-after-going-through-beat-saber-hell-3407304/) ]
 - **Stonkfly** - A simulated fly connectome given real money to trade BTC-USDC on Coinbase, with trades tied to simulated dopamine-neuron activity. [ [repo](https://github.com/nftechie/stonkfly) ]
 - An NFT collection at flynft.online driven by simulated walking/cursor control - a real, on-theme experiment, but also an active crypto/NFT storefront tied to a token; link at your own discretion rather than treating it as a neutral demo.
 - The sexual-dimorphism and courtship-circuit findings from the MaleCNS papers drew significant community discussion, though no interactive "courtship circuit" demo (analogous to the game/trading demos above) was found.
